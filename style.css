@@ -1,0 +1,82 @@
+/* Configuración del contenedor principal */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e3f0);
+    display: flex;
+    justify-content: flex-start; /* Alinear todo a la izquierda */
+    align-items: flex-start;    /* Comenzar desde arriba */
+    height: 100vh;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 20px; /* Separación desde la izquierda */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 300px; /* Ancho fijo para el formulario */
+    margin-left: 20px; /* Separación desde la izquierda */
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los inputs y botones */
+label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+button.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Mapa */
+#map {
+    flex: 1; /* El mapa ocupa el resto del espacio */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    margin-left: 20px; /* Separación entre el mapa y el formulario */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
